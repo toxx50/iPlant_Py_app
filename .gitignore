@@ -119,6 +119,8 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+py-flr/
+
 
 # Spyder project settings
 .spyderproject
