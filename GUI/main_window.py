@@ -22,8 +22,8 @@ class MainApp(tk.Tk):
         self.lgn_frame = tk.Frame(self, bg='#181818',width='900',height='600')
         self.lgn_frame.place(x=150,y=100)
 
-        self.loginLabel = tk.Label(self.lgn_frame, text="LOG IN", font=('arial',25,'bold'), bg='#181818',fg='white')
-        self.loginLabel.place(x=570,y=200, width=300,height=30)
+        self.loginLabel = tk.Label(self.lgn_frame, text="Sign in", font=('arial',22,'bold'), bg='#181818',fg='white')
+        self.loginLabel.place(x=585,y=190, width=300,height=30)
 
         # Username
         self.usrnam_label = tk.Label(self.lgn_frame,text='username', font=('arial',15),bg='#181818',fg='#4f4e4d')
@@ -37,11 +37,11 @@ class MainApp(tk.Tk):
         self.usr_name_line.place(x=615,y=324)
 
         # Username icon
-        self.side_img = Image.open('C:/Users/Korisnik/PycharmProjects/DATA SCIENCE/PyFlora_app/gui_files/usr_icon.png')
-        photo = ImageTk.PhotoImage(self.side_img)
-        self.side_img_label = tk.Label(self.lgn_frame, image=photo, bg='#181818')
-        self.side_img_label.image = photo
-        self.side_img_label.place(x=615, y=295)
+        self.side_img_usr = Image.open('C:/Users/Korisnik/PycharmProjects/DATA SCIENCE/PyFlora_app/gui_files/usr_icon.png')
+        photo = ImageTk.PhotoImage(self.side_img_usr)
+        self.side_img_usr_label = tk.Label(self.lgn_frame, image=photo, bg='#181818')
+        self.side_img_usr_label.image = photo
+        self.side_img_usr_label.place(x=615, y=295)
 
         # Password
         self.passwrd_label = tk.Label(self.lgn_frame,text='password', font=('arial',15),bg='#181818',fg='#4f4e4d')
@@ -55,11 +55,11 @@ class MainApp(tk.Tk):
         self.usr_name_line.place(x=615, y=404)
 
         # Password icon
-        self.side_img = Image.open('C:/Users/Korisnik/PycharmProjects/DATA SCIENCE/PyFlora_app/gui_files/key_icon.png')
-        photo = ImageTk.PhotoImage(self.side_img)
-        self.side_img_label = tk.Label(self.lgn_frame, image=photo, bg='#181818')
-        self.side_img_label.image = photo
-        self.side_img_label.place(x=615, y=375)
+        self.side_img_key = Image.open('C:/Users/Korisnik/PycharmProjects/DATA SCIENCE/PyFlora_app/gui_files/key_icon.png')
+        photo = ImageTk.PhotoImage(self.side_img_key)
+        self.side_img_key_label = tk.Label(self.lgn_frame, image=photo, bg='#181818')
+        self.side_img_key_label.image = photo
+        self.side_img_key_label.place(x=615, y=375)
 
         # left side image
         self.side_img = Image.open('C:/Users/Korisnik/PycharmProjects/DATA SCIENCE/PyFlora_app/gui_files/IoT-1222.png')
@@ -74,7 +74,18 @@ class MainApp(tk.Tk):
         photo = ImageTk.PhotoImage(self.login_img)
         self.login_img_label = tk.Label(self.lgn_frame, image=photo, bg='#181818')
         self.login_img_label.image = photo
-        self.login_img_label.place(x=650, y=50)
+        self.login_img_label.place(x=665, y=50)
+
+
+        # login button
+        self.login_button = Image.open('C:/Users/Korisnik/PycharmProjects/DATA SCIENCE/PyFlora_app/gui_files/login_button.png')
+        photo = ImageTk.PhotoImage(self.login_button)
+        self.login_button_label = tk.Label(self.lgn_frame, image=photo, bg='#181818')
+        self.login_button_label.image = photo
+        self.login_button_label.place(x=615, y=430)
+
+        self.login = tk.Button(self.login_button_label, text='LOGIN', font=('arial',15,'bold'),width=19, bd=0,bg='#138b61',cursor='hand2',activebackground='#138b61',fg='white')
+        self.login.place(x=10,y=5)
 
 
 
