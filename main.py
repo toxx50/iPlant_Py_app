@@ -4,7 +4,6 @@ from GUI.main_window import *
 
 if __name__ == "__main__":
     app = MainApp()
-    app.state('zoomed')
     app.mainloop()
 #kreirati predefiniranog korisnika i pohranit ga u bazu podataka
 """korisnik ima predefinirane podatke(ime,prezime, korisnicko ime, password, te inicijalnu bazu podataka o biljkama te jednu pyposudu"""
