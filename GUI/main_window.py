@@ -29,7 +29,7 @@ class MainApp(tk.Tk):
         self.usrnam_label = tk.Label(self.lgn_frame,text='username', font=('arial',15),bg='#181818',fg='#4f4e4d')
         self.usrnam_label.place(x=580, y=270, width=150, height=20)
 
-        self.usr_nameEntry = tk.Entry(self.lgn_frame,highlightthickness=0,relief="flat", bg='#181818', fg='#4f4e4d',
+        self.usr_nameEntry = tk.Entry(self.lgn_frame,highlightthickness=0,relief="flat", bg='#181818', fg='dark gray',
                                       font=('arial',13))
         self.usr_nameEntry.place(x=645,y=300, width=150,height=20)
 
@@ -47,7 +47,7 @@ class MainApp(tk.Tk):
         self.passwrd_label = tk.Label(self.lgn_frame,text='password', font=('arial',15),bg='#181818',fg='#4f4e4d')
         self.passwrd_label.place(x=585, y=350, width=150, height=20)
 
-        self.psw_nameEntry = tk.Entry(self.lgn_frame, highlightthickness=0,relief="flat", bg='#181818', fg='#4f4e4d',
+        self.psw_nameEntry = tk.Entry(self.lgn_frame, highlightthickness=0,relief="flat", bg='#181818', fg='dark grey',
                                       font=('arial',13))
         self.psw_nameEntry.place(x=645, y=380, width=150, height=20)
 
