@@ -91,14 +91,14 @@ class MainApp(tk.Tk):
 
 
 
-
-
-
-
-
+#trenutno postavljeno da mogu pokretat kod
 if __name__ == "__main__":
     app = MainApp()
     app.mainloop()
+
+
+
+
 
 
 
