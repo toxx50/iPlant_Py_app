@@ -1,14 +1,18 @@
-from GUI.main_window import *
+from tk_gui.login_window import MainWindow
+from tkinter import *
+
 
 
 
 if __name__ == "__main__":
-    app = MainApp()
+    app = MainWindow()
     app.mainloop()
 #kreirati predefiniranog korisnika i pohranit ga u bazu podataka
 """korisnik ima predefinirane podatke(ime,prezime, korisnicko ime, password, te inicijalnu bazu podataka o biljkama te jednu pyposudu"""
 
 #prijava u aplikaciju - unos korisnickog imena i passworda
+
+"""nakon logina main page postavi cijeli label preko stranice sa gore ponuđenim opcijama kao što su home, add bla bla"""
 
 #glavno sučelje aplikacije, ažuriranje podataka senzora
 
