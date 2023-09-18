@@ -1,4 +1,5 @@
 from tk_gui.front_page import *
+from constants.all_constants import *
 import tkinter as tk
 from tkinter import ttk
 from PIL import ImageTk, Image
@@ -9,8 +10,10 @@ class MainWindow(tk.Tk):
     def __init__(self, *args, **kwargs):
         super().__init__(*args,**kwargs)
         self.title("PyFlora")
+        img = tk.PhotoImage(file=MAIN_ICON)
         self.geometry("1200x800")
         self.resizable(0,0)
+        self.iconphoto(False, img)
 
         self.login_window = LogInWindow(self)
 
