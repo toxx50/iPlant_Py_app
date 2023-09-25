@@ -32,12 +32,5 @@ Session = sessionmaker(bind=engine)
 session = Session()
 
 
-"""
-db_user = UserInfo('Tomislav','Ceronja', 'Zagreb', 'user', 'admin', 'tomislav.c@iplants.hr')
-session.add(db_user)
-session.commit()
-"""
 
 users = session.query(UserInfo)
-
-print(users)
