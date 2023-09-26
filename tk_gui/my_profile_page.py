@@ -55,33 +55,51 @@ class MyProfilePage(ttk.Frame):
         self.usr_name_line.place(x=25,y=175)
         #ENDREGION
 
+        """ OVDJE DODATI JOŠ TEMPERATURU, TLAK ZRAKA, I VLAŽNOST """
+
+        """ DA BUDE ISPOD LINIJE U PLAVOM FRAMEU """
+
+
+
         #REGION password
         self.city_label = tk.Label(self.myprofile_frame_info2,text=f'City', font=('arial',17),bg='light grey',fg='grey')
         self.city_label.place(x=50, y=30)
 
-        self.city_db_label = tk.Label(self.myprofile_frame_info2,text=f'{user_city()}', font=('arial',17),bg='light grey',fg='grey')
+        self.city_db_label = tk.Label(self.myprofile_frame_info2,text=f'{user_city()}', font=('arial',17),bg='light grey',fg='black')
         self.city_db_label.place(x=600, y=30, anchor='ne')
 
         self.username_label = tk.Label(self.myprofile_frame_info2,text=f'Username', font=('arial',17),bg='light grey',fg='grey')
         self.username_label.place(x=50, y=80)
 
-        self.username_db_label = tk.Label(self.myprofile_frame_info2,text=f'{user_username()}', font=('arial',17),bg='light grey',fg='grey')
+        self.username_db_label = tk.Label(self.myprofile_frame_info2,text=f'{user_username()}', font=('arial',17),bg='light grey',fg='black')
         self.username_db_label.place(x=600, y=80, anchor='ne')
 
         self.password_label = tk.Label(self.myprofile_frame_info2,text=f'Password', font=('arial',17),bg='light grey',fg='grey')
         self.password_label.place(x=50, y=130)
 
-        self.password_db_label = tk.Label(self.myprofile_frame_info2,text=f'{user_password_hide()}', font=('arial',17),bg='light grey',fg='grey')
+        self.password_db_label = tk.Label(self.myprofile_frame_info2,text=f'{user_password_hide()}', font=('arial',17),bg='light grey',fg='black')
         self.password_db_label.place(x=600, y=130, anchor='ne')
 
 
+        """ NEXT TO DO """
 
         """ DODATI BROJ PLANTSA SA DESNE I TAKOĐER DODATI BROJ PLANTERA """
+
+        """ DODATI CRTE IZMEĐU SVAKOG LABELA """
+
+        """ DODAJ DA PRIKAZANI BROJEVI ZA PLANTS I PLANTERS BUDU BUTTONI KOJI ONDA NA PRITISAK PREBACUJU NA PLANTER/PLANTS TAB """
+
         self.plants_label = tk.Label(self.myprofile_frame_info2,text=f'Number of plants', font=('arial',17),bg='light grey',fg='grey')
         self.plants_label.place(x=50, y=180)
 
+        self.plant_num_db_label = tk.Label(self.myprofile_frame_info2,text=f'0', font=('arial',17),bg='light grey',fg='black')
+        self.plant_num_db_label.place(x=600, y=180, anchor='ne')
+
         self.planter_label = tk.Label(self.myprofile_frame_info2,text=f'Number of planters', font=('arial',17),bg='light grey',fg='grey')
         self.planter_label.place(x=50, y=230)
+
+        self.planter_num_db_label = tk.Label(self.myprofile_frame_info2,text=f'0', font=('arial',17),bg='light grey',fg='black')
+        self.planter_num_db_label.place(x=600, y=230, anchor='ne')
 
 
         #ENDREGION

@@ -9,7 +9,7 @@ from PIL import ImageTk, Image
 class MainWindow(tk.Tk):
     def __init__(self, *args, **kwargs):
         super().__init__(*args,**kwargs)
-        self.title("PyFlora")
+        self.title("iPlants PY")
         img = tk.PhotoImage(file=MAIN_ICON)
         self.geometry("1200x800")
         self.resizable(0,0)
