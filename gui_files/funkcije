@@ -1,0 +1,22 @@
+
+
+treba napraviti prilikom kreiranja biljke:
+
+dodati par 10 vaza i 12 biljaka u bazu podataka, sa svim traženim informacijama i slikama.
+
+također ih izlistati na ekranu 'plants' i 'planter'
+
+DODAJ BILJKU:
+dodaj fotografiju, dodaj naziv, itd
+glavno je za dodati postojecu vazu koja mora biti prazna, ako nije prazna ili ne postoji
+izbaciti poruku i traziti novi unos.
+ako se izvrši dodavanje biljke u vazu, mora se povećati broj +1 (biljke u navedenoj vazi)
+pridodat ID vaze u bazu podataka biljke.
+
+kada se kreiraju vaze i dodaju biljke, ubaci slobodno radio buttone tipa za Voda - [] DA  [X] NE
+Hrana -  [] DA  [X] NE , itd....
+
+
+
+
+

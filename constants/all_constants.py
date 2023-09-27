@@ -65,6 +65,3 @@ def user_email():
     for user in users:
         return user.email
 
-print(user_first_name(), user_last_name(), user_city(), user_email())
-
-print(user_password_hide())
